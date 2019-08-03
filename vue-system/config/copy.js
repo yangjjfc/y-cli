@@ -15,7 +15,6 @@ const getType = dst => {
 };
 
 const copyDir = (src, dist) => {
-    console.log(dist.split("/"))
     dist.split("/").reduce((str, item, index) => {
         str = str ?  str + "/" + item:item;
         if (!fs.existsSync(str)) {

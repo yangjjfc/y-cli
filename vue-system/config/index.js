@@ -26,7 +26,7 @@ let trasPath=(dir,item)=>{
 config.copyfile.forEach(item => {
   copy(trasPath(dirTpm,'./'+item  ) , trasPath(dirPro,'./'+item  ));
 });
-
+console.log('copy done')
 //注入内容
 for (const key of Object.keys(config.inject)) {
   let data1=fs.readFileSync(path.resolve(__dirname, "../tpm/"+config.inject[key]), 'utf8').split(/\r\n|\n|\r/gm);
@@ -46,7 +46,6 @@ for (const key of Object.keys(config.inject)) {
 //安装依赖
 for (const key of Object.keys(config.yarn)) {
   config.yarn[key].forEach(item=>{
-    console.log(item)
     if(key==='devDependencies'){
       execSync(`yarn add ${item} -D`,{cwd:dirPro})
     }else{

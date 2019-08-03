@@ -3,5 +3,6 @@ set -e
 
 winpty vue.cmd  create $name
 
-
-node ../vue-system/config/index $name
+project=$(dirname "$0")
+echo 'project: '$project
+node $project'/../vue-system/config/index' $name

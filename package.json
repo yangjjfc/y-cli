@@ -1,8 +1,11 @@
 {
   "name": "y-cli",
+  "main": "bin/index.js",
+  "bin": {
+    "ycloud": "bin/index.js"
+  },
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,13 +14,6 @@
   "dependencies": {
     "commander": "^2.20.0",
     "inquirer": "^6.5.0",
-    "semver": "^6.3.0",
-    "v-contextmenu": "^2.8.0",
-    "vuex-persistedstate": "^2.5.4",
-    "ycloud-ui": "^2.1.12"
-  },
-  "devDependencies": {
-    "compression-webpack-plugin": "^3.0.0",
-    "node-sass": "^4.12.0"
+    "semver": "^6.3.0"
   }
 }
