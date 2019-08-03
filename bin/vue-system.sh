@@ -1,9 +1,7 @@
 #!/usr/bin/env sh
 set -e
 
-vue create "$name"
+winpty vue.cmd  create $name
 
-cd "$name"
 
-'node ./config.js $name' 
-
+node ../vue-system/config/index $name
