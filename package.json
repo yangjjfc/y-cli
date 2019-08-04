@@ -1,8 +1,8 @@
 {
-  "name": "y-cli",
-  "main": "bin/index.js",
+  "name": "ycloud-cli",
+  "main": "bin/index.sh",
   "bin": {
-    "ycloud": "bin/index.js"
+    "ycloud": "bin/index.sh"
   },
   "version": "1.0.0",
   "description": "",
@@ -17,7 +17,8 @@
     "inquirer": "^6.5.0",
     "minimist": "^1.2.0",
     "semver": "^6.3.0",
-    "slash": "^3.0.0"
+    "slash": "^3.0.0",
+    "ycloud-cli": "^1.0.0"
   },
   "engines": {
     "node": ">=8.9"

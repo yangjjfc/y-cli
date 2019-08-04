@@ -515,3 +515,15 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+ycloud-cli@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/ycloud-cli/-/ycloud-cli-1.0.0.tgz#395dcd68b6d714979c47a14bc2acaed1d748f8fb"
+  integrity sha512-pPpQUiXRiT3HJfj/Et9WHIWHjb6y+2r4VAQuqeEqCMSkxGnU0FFso4umXIShKAin0qTXr0ylssKvXjRgbyx2NQ==
+  dependencies:
+    commander "^2.20.0"
+    didyoumean "^1.2.1"
+    inquirer "^6.5.0"
+    minimist "^1.2.0"
+    semver "^6.3.0"
+    slash "^3.0.0"
